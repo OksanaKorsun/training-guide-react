@@ -1,16 +1,15 @@
+import { HiBeaker } from 'react-icons/hi';
+import { PilotList } from './PilotList';
+import pilots from '../pilots.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <h1>
+        Top rated pilots <HiBeaker size="40" />
+      </h1>
+
+      <PilotList pilots={pilots} />
     </div>
   );
 };
